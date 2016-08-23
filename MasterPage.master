@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Thế giới di động</title>
+	<meta name="description" content="">
+	<meta name="author" content="Ahmed Saeed">
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="template/css/bootstrap.min.css" media="screen">
+	<!-- jquery ui css -->
+	<link rel="stylesheet" href="template/css/jquery-ui-1.10.1.min.css">
+	<link rel="stylesheet" href="template/css/customize.css">
+	<link rel="stylesheet" href="template/css/font-awesome.css">
+	<link rel="stylesheet" href="template/css/style.css">
+	<!-- fancybox -->
+	<link rel="stylesheet" href="template/js/fancybox/jquery.fancybox.css">
+	<!--[if lt IE 9]>
+		<script src="template/../../html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="template/../../ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<link rel="stylesheet" href="css/font-awesome-ie7.css">
+	<![endif]-->
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="#">
+	<link rel="apple-touch-icon" href="template/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="template/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="template/images/apple-touch-icon-114x114.png">
+
+        <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+<form id="form1" runat="server">
+	<div id="Div1">
+		<!--begain header-->
+		<header>
+			<div class="topHeader">
+				<!--end container-->
+			</div><!--end topHeader-->
+
+			<div class="subHeader">
+				<div class="container">
+					<div class="navbar">
+
+						<div class="siteLogo pull-left">
+							<h1><a href="./"><img src="template/img/logo.png" alt="Shoppest"></a></h1>
+						</div>
+					    
+				      	<ul class="nav">
+				      		<li class="active"><a href="#"><i class="icon-home"></i></a></li>
+                            				      		
+				      		
+				      		<li><a href="./SanPham.aspx">Sản phẩm</a></li>
+				      		
+                              <li><a href="./Gioithieu.aspx">Giới thiệu</a></li>
+                             
+                              <li><a href="./Admin/Default.aspx">Tới trang ADMIN</a></li>
+				      	</ul><!--end nav-->
+
+					</div>
+				</div><!--end container-->
+			</div><!--end subHeader-->
+		</header>
+		<!-- end header -->
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+		<!--begain footer-->
+		<footer>
+
+		<div class="footerOuter">
+			<div class="container">
+				<div class="row-fluid">
+
+					<!--end span6-->
+
+
+					<!--end span3-->
+
+					<div class="span3">
+					</div>
+                    <!--end span3-->
+
+					<!--end span3-->
+
+				</div><!--end row-fluid-->
+
+			</div><!--end container-->
+		</div><!--end footerOuter-->
+
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<p>&nbsp;</p>
+				</div>
+			</div>
+		</div>
+		</footer>
+		<!--end footer-->
+
+	</div><!--end wrapper-->
+
+
+
+	<!-- Sidebar Widget
+	================================================== -->
+	<div class="switcher">
+		<h3>Site Switcher</h3>
+		<a class="Widget-toggle-link">+</a>
+
+		<div class="switcher-content clearfix">
+
+			<div class="pattern-switch">
+				<h4>BG Pattern</h4>
+				<a style="background:url(template/img/backgrounds/bgnoise_lg.png);">bgnoise_lg</a>
+				<a style="background:url(template/img/backgrounds/bg.png);">bg</a>
+				<a style="background:url(template/img/backgrounds/foggy_birds.png);">foggy_birds</a>
+				<a style="background:url(template/img/backgrounds/gplaypattern.png);">gplaypattern</a>
+				<a style="background:url(template/img/backgrounds/grid_noise.png);">grid_noise</a>
+				<a style="background:url(template/img/backgrounds/lil_fiber.png);">lil_fiber</a>
+				<a style="background:url(template/img/backgrounds/scribble_light.png);">scribble_light</a>
+				<a style="background:url(template/img/backgrounds/tex2res5.png);">tex2res5</a>
+				<a style="background:url(template/img/backgrounds/white_plaster.png);">white_plaster</a>
+			</div><!--end pattern-switch-->
+
+		</div><!--end switcher-content-->
+	</div>
+	<!-- End Sidebar Widget-->
+
+
+
+	<!-- JS
+	================================================== -->
+	<script src="template/js/jquery-1.9.1.min.js"></script>
+	<script src="template/js/jquery-ui-1.10.2.min.js"></script>
+	<!-- bootstrap -->
+    <script src="template/js/bootstrap.min.js"></script>
+	<!-- jQuery.Cookie -->
+	<script src="template/js/jquery.cookie.js"></script>
+    <!-- fancybox -->
+    <script src="template/js/fancybox/jquery.fancybox.js"></script>
+    <!-- jquery.tweet -->
+    <script src="template/js/jquery.tweet.js"></script>
+    <!-- custom function-->
+    <script src="template/js/custom.js"></script>
+
+    </form>
+</body>
+
+</html>
+
+
